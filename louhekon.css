@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #444444;
+    background: #f8f8f8;
+}
+
+a {
+    color: #fa9b1e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#louhekon {
+    margin: 25px auto 0;
+    font-size: 76px;
+    text-align: center;
+    color: #777777;
+}
+
+#content {
+    width: 640px;
+    margin: 0px auto;
+}
+
+h3, h4 {
+    text-align: center;
+    color: #666666;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+#android {
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+#android img {
+    margin-right: 20px;
+    vertical-align: -10px;
+}
+
+#arrow-container {
+    background: #fa9b1e;
+    width: 236px;
+    height: 236px;
+    margin: 140px auto 20px;
+    border: solid 5px white;
+    border-radius: 10px;
+}
+
+#left-arrow, #right-arrow {
+    position: absolute;
+    top: 140px;
+    width: 236px;
+    height: 241px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#left-arrow {
+    background-image: url(images/left-arrow-150x235.png);
+    background-position: -10px -37px;
+    animation-duration: 1.3s;
+    animation-name: slideleft;
+}
+
+@keyframes slideleft {
+  from {
+    background-position: -150px 8px;
+  }
+
+  to {
+    background-position: -10px -37px;
+  }
+}
+
+#right-arrow {
+    background-image: url(images/right-arrow-150x235.png);
+    background-position: 95px 48px;
+    animation-duration: 1.3s;
+    animation-name: slideright;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 230px 68px;
+  }
+
+  to {
+    background-position: 95px 48px;
+  }
+}
